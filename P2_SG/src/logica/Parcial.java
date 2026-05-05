@@ -38,7 +38,7 @@ public class Parcial {
             long calculoTemporal = (long) resultado * b;
             //Si se pasa de este valor, el nuumero no esta entre loq ue adminte un entero
             if (calculoTemporal > Integer.MAX_VALUE || calculoTemporal < Integer.MIN_VALUE) {
-                throw new DesbordamientoExcepcion("Desbordamiento: El resultado excede los límites de un int (32bits)");
+                throw new DesbordamientoExcepcion("Desbordamiento: El resultado se pasa de los 32bits");
             }
             // Si lo cumple se vuelve a int para dar el reusltado
             resultado = (int) calculoTemporal;

@@ -1,7 +1,6 @@
 package test;
 
 
-import static org.junit.Assert.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import logica.Parcial;
