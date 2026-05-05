@@ -86,8 +86,8 @@ public class ParcialTest {
 
     @Test
     public void testCalculoNormalPositivo() throws Exception {
-        int resultado = parcial.calcularPotencia(3, 4);
-        assertEquals(81, resultado, "3^4 debe ser 81");
+        int resultado = parcial.calcularPotencia(2, 3);
+        assertEquals(8, resultado, "2^3 debe ser 8");
     }
 
     @Test
