@@ -8,7 +8,7 @@ public class Parcial {
 
     public int calcularPotencia(int b, int e) throws DesbordamientoExcepcion, ResultadoNoEnteroExcepcion, IndeterminacionExcepcion {
        
-        // Validar indeterminación matemática (0^0)
+        // Validar indeterminacion matematica (0^0)
         if (b == 0 && e == 0) {
             throw new IndeterminacionExcepcion("Indeterminacion (0^0)");
         }
@@ -28,11 +28,11 @@ public class Parcial {
         if (e < 0) {
             if (b == 1) return 1;
             if (b == -1) return (e % 2 == 0) ? 1 : -1;
-            // Para cualquier otra base, el resultado estará entre -1 y 1
+            // Para cualquier otra base, el resultado esta entre -1 y 1
             throw new ResultadoNoEnteroExcepcion("Exponente negativo: El resultado esw decimal y el mwtodo debe retornar un entero.");
         }
         
-        // Cálculo de la potencia con validación de desbordamiento de int
+        // Calculo de la potencia con validación de desbordamiento de int
         int resultado = 1;
         for (int i = 0; i < e; i++) {
             long calculoTemporal = (long) resultado * b;
